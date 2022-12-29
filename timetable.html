@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeTable</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .timetable{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+      table {
+        border: 1px solid rgb(58, 55, 55);
+        border-collapse: collapse;
+      }
+      tr {
+        border: 1px solid grey;
+        padding: 0;
+      }
+      td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid black;
+      }
+      td[colspan]{
+        background-color:rgba(206, 225, 219, 0.349);
+      } 
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="timetable">
+      <table class="tt">
+        <thead>
+          <tr>
+            <td colspan="8" class="headcell">II SEMESTER MCA-B SECTION</td>
+          </tr>
+          <tr>
+            <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>09:00 - 10:00</td>
+            <td>10:00 - 11:00</td>
+            <td>11:00 - 12:00</td>
+            <td>12:00 - 1:00</td>
+            <td rowspan="6">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>02:00 - 03:00</td>
+            <td>03:00 - 04:00</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MONDAY</td>
+            <td>SE(VT)</td>
+            <td>MP(RK)</td>
+            <td colspan="2">
+              G1:MP LAB(RK, RV) 811<br />
+              G2:WSD LAB(KL,SA) 813
+            </td>
+            <td rowspan="6">
+              <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+              L<br>U<br>N<br>C<br>H 
+              <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+            </td>
+            <td>WSD(KL)</td>
+            <td>RM(SD)</td>
+          </tr>
+          <tr>
+            <td>TUESDAY</td>
+            <td colspan="3">DBT LAB(RU,JC,SD,FIZAN) MCA LAB BLK 2</td>
+            <td>DBT(RU)</td>
+            <!-- <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td> -->
+            <td>LIBRARY</td>
+            <td>WSD(KL)</td>
+          </tr>
+          <tr>
+            <td>WEDNESDAY</td>
+            <td>MP(RK)</td>
+            <td>RM(SD)</td>
+            <td>WSD(KL)</td>
+            <td>SE(VT)</td>
+            <!-- <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td> -->
+            <td>LIBRARY</td>
+            <td>DBT(RU)</td>
+          </tr>
+          <tr>
+            <td>THURSDAY</td>
+            <td>SE(VT)</td>
+            <td>DBT(RU)</td>
+            <td colspan="2">
+              G1:WSD LAB(KL,SA) 813
+              <br />G2:MP LAB(RK, RV) 811
+            </td>
+            <!-- <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td> -->
+            <td>MP(RK)</td>
+            <td>LIBRARY</td>
+          </tr>
+          <tr>
+            <td>FRIDAY</td>
+            <td>WSD(KL)</td>
+            <td>RM(SD)</td>
+            <td colspan="2">
+              G2:WSD LAB(KL,SA) 813
+              <br />G1:MP LAB(RK, RV) 811
+            </td>
+            <!-- <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td> -->
+            <td>MP(RK)</td>
+            <td>DBT(RU)</td>
+          </tr>
+          <tr>
+            <td>SATURDAY</td>
+            <td colspan="2">
+              G1:WSD LAB(KL,SA) 813
+              <br />G2:MP LAB(RK, RV) 811
+            </td>
+            <td>SE(VT)</td>
+            <td>MENTORING</td>
+
+            <!-- <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+  </body>
+</html>

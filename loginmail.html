@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      #login,
+      #mail-creation {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      h1 {
+        color: rgb(0, 0, 0);
+        
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      label {
+        margin-top: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 60%;
+        height: 30px;
+        font-size: 18px;
+        padding: 0 10px;
+      }
+
+      input[type="submit"] {
+        width: 20%;
+        height: 35px;
+        font-size: 18px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="login">
+        <h1>Login</h1>
+        <form>
+          <label for="username">Username:</label><br />
+          <input type="text" id="username" name="username" /><br />
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" /><br />
+          <!-- <input type="submit" value="Submit" /> -->
+          <button>Submit</button>
+        </form>
+        <p>Not a user yet? <a href="createMail.html">Join!</a></p>
+      </div>
+    </div>
+
+    <script>
+      // handle login form submission
+      const loginForm = document.querySelector("#login form");
+      loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const username = loginForm.username.value;
+        const password = loginForm.password.value;
+        window.location.href = "timetable.html"
+        
+      });
+    </script>
+  </body>
+</html>

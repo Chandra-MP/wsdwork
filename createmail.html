@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreateMail</title>
+    <style>
+      #login,
+      #mail-creation {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      h1 {
+        color: rgb(0, 0, 0);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      label {
+        margin-top: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 60%;
+        height: 30px;
+        font-size: 18px;
+        padding: 0 10px;
+      }
+
+      input[type="submit"] {
+        width: 20%;
+        height: 35px;
+        font-size: 18px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="mail-creation">
+        <h1>Create a Mail ID</h1>
+        <form>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" /><br />
+          <!-- <input type="submit" value="Create" /> -->
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      const mailCreationForm = document.querySelector("#mail-creation form");
+      mailCreationForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = mailCreationForm.name.value;
+        const email = mailCreationForm.email.value;
+        const password = mailCreationForm.password.value;
+        // send name, email, and password to server to create a new mail id
+        window.location.href = "loginmail.html"
+      });
+    </script>
+  </body>
+</html>
